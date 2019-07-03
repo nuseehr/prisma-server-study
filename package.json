@@ -1,0 +1,18 @@
+{
+  "name": "prisma-study",
+  "version": "1.0.0",
+  "description": "instagram clone project with Express, Prisma, React",
+  "repository": "https://github.com/nuseehr/prisma-study.git",
+  "author": "Lee Sun Hong <nuseehr@naver.com>",
+  "license": "MIT",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "graphql-yoga": "^1.18.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  },
+  "scripts": {
+    "dev": "nodemon --exec babel-node src/server.js"
+  }
+}
