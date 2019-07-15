@@ -1,6 +1,6 @@
 import dotenv from "dotenv";
 import path from "path";
-dotenv.config({ path: path.resolve(__dirname, ".env")});
+dotenv.config({ path: path.resolve(__dirname, ".env") });
 
 import { adjectives, nouns } from "./word";
 import nodemailer from "nodemailer";
@@ -12,7 +12,7 @@ export const generateSecret = () => {
   return `${adjectives[randomNumber]} ${nouns[randomNumber]}`;
 };
 
-const sendMail = (email) => {
+const sendMail = email => {
   const options = {
     auth: {
       api_user: process.env.SENDGRID_USERNAME,

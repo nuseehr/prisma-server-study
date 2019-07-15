@@ -3,11 +3,11 @@ import path from "path";
 import { GraphQLServer } from "graphql-yoga";
 import logger from "morgan";
 import schema from "./schema";
-import {sendSecretMail} from "./utils";
+import { sendSecretMail } from "./utils";
 
 sendSecretMail("nuseehr@naver.com", "123456789");
 
-dotenv.config({ path: path.resolve(__dirname, ".env")});
+dotenv.config({ path: path.resolve(__dirname, ".env") });
 require("dotenv").config();
 
 const PORT = process.env.PORT || 4000;
@@ -15,6 +15,6 @@ const server = new GraphQLServer({ schema });
 
 server.express.use(logger("dev"));
 
-server.start({ port:PORT }, () => 
+server.start({ port: PORT }, () =>
   console.log(`🐸 Server running on http://localhost:${PORT}`)
 );

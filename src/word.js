@@ -499,7 +499,7 @@ export const adjectives = [
   "flashy",
   "womanly",
   "tasteful"
-]
+];
 
 export const nouns = [
   "river",
@@ -1002,5 +1002,4 @@ export const nouns = [
   "shape",
   "store",
   "office"
-]
-
+];
