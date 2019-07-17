@@ -5,8 +5,6 @@ import logger from "morgan";
 import schema from "./schema";
 import { sendSecretMail } from "./utils";
 
-sendSecretMail("nuseehr@naver.com", "123456789");
-
 dotenv.config({ path: path.resolve(__dirname, ".env") });
 require("dotenv").config();
 
