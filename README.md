@@ -5,7 +5,7 @@ instagram clone project with Express, Prisma, React
 
 - [x] Create account
 - [x] Request Secret
-- [ ] Confirm Secret(Log in)
+- [x] Confirm Secret(Log in)
 - [ ] Log in
 - [ ] Like / Unlike a photo
 - [ ] Comment on a photo

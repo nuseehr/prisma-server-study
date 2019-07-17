@@ -3,7 +3,6 @@ import path from "path";
 import { GraphQLServer } from "graphql-yoga";
 import logger from "morgan";
 import schema from "./schema";
-import { sendSecretMail } from "./utils";
 
 dotenv.config({ path: path.resolve(__dirname, ".env") });
 require("dotenv").config();
