@@ -1,13 +1,9 @@
-import dotenv from "dotenv";
-import path from "path";
 import { GraphQLServer } from "graphql-yoga";
 import logger from "morgan";
 import schema from "./schema";
-import passport from 'passport';
-import './passport';
-
-dotenv.config({ path: path.resolve(__dirname, ".env") });
-require("dotenv").config();
+import passport from "passport";
+import "./passport";
+import "./env";
 
 const PORT = process.env.PORT || 4000;
 const server = new GraphQLServer({ schema });
