@@ -3,6 +3,8 @@ import path from "path";
 import { GraphQLServer } from "graphql-yoga";
 import logger from "morgan";
 import schema from "./schema";
+import passport from 'passport';
+import './passport';
 
 dotenv.config({ path: path.resolve(__dirname, ".env") });
 require("dotenv").config();
