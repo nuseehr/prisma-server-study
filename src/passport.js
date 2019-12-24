@@ -1,7 +1,3 @@
-import dotenv from "dotenv";
-import path from "path";
-dotenv.config({ path: path.resolve(__dirname, ".env") });
-
 import passport from "passport";
 import { Strategy, ExtractJwt } from "passport-jwt";
 import { prisma } from "../generated/prisma-client";
@@ -31,6 +27,7 @@ export const authenticateJwt = (req, res, next) =>
     }
     next();
   })(req, res, next);
+  // 함수를 리턴, 이 함수는 graphql함수.
 
 passport.use(new Strategy(jwtOptions, verifyUser));
 passport.initialize();

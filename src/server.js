@@ -1,9 +1,7 @@
+import "./env";
 import { GraphQLServer } from "graphql-yoga";
 import logger from "morgan";
 import schema from "./schema";
-import passport from "passport";
-import "./passport";
-import "./env";
 import { authenticateJwt } from "./passport";
 
 const PORT = process.env.PORT || 4000;

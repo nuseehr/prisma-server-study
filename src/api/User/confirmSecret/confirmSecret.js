@@ -7,7 +7,7 @@ export default {
       const { secret, email } = args;
       const user = await prisma.user({ email });
       if (user.loginSecret === secret) {
-        //JWT
+        
         return generateToken(user.id);
       } else {
         throw Error("WRONG EMAIL - SECRET COMBINATION");
